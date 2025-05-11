@@ -7,7 +7,7 @@ use Inertia\Inertia;
 use App\Http\Controllers\AttendanceController;
 
 Route::get('/', function () {
-    return redirect()->route('dashboard');
+    return Inertia::render('Welcome');
 });
 
 Route::get('/dashboard', function () {

@@ -1,4 +1,3 @@
-// resources/js/Pages/Dashboard.vue
 <template>
   <AppLayout>
     <template #default>

@@ -19,18 +19,18 @@
         </p>
       </form>
     </GuestLayout>
-  </template>
+</template>
 
-  <script setup>
-  import GuestLayout from '@/Layouts/GuestLayout.vue'
-  import { useForm, Link, router } from '@inertiajs/vue3'
+<script setup>
+import GuestLayout from '@/Layouts/GuestLayout.vue'
+import { useForm, Link, router } from '@inertiajs/vue3'
 
-  const form = useForm({
-    email: '',
-    password: '',
-  })
+const form = useForm({
+   email: '',
+   password: '',
+})
 
-  function submit() {
-    form.post(route('login'))
-  }
-  </script>
+function submit() {
+   form.post(route('login'))
+}
+</script>
